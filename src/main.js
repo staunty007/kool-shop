@@ -3,8 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueNoty from 'vuejs-noty'
 
-Vue.config.productionTip = false
+import 'vuejs-noty/dist/vuejs-noty.css'
+
+Vue.use(VueNoty);
+
+//Vue.config.productionTip = false
 
 const authData = localStorage.getItem("auth");
 
