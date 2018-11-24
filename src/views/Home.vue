@@ -1,7 +1,12 @@
 <template>
 	<div class="row">
-		<div class="col-md-3 col-sm-6 col-xs-12 mr-0 mt-3" v-if="products" v-for="product in products" :key="product.id">
-			<Product />
+		<div class="col-md-10">
+			<h4 class="font-weight-bolder text-center mt-1"> Recent Products</h4>
+			<div class="row">
+			<div class="col-md-3 col-sm-6 col-xs-12 mr-0 mt-3" v-if="products" v-for="product in products" :key="product.id">
+				<Product :product="product" />
+			</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -32,3 +37,9 @@ import Product from '@/components/Product.vue'
 		}
 	}
 </script>
+
+<style>
+a:hover {
+    text-decoration: none;
+}
+</style>
