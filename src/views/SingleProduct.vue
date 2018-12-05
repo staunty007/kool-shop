@@ -25,10 +25,10 @@
             
             <div class="row mt-2">
                 <div class="col-4">
-                    <h4 class="font-weight-bolder">Price: #<del>{{ product.price }}</del></h4>
+                    <h5 class="font-weight-bolder">Price: #<del>{{ product.price }}</del></h5>
                 </div>
                 <div class="col-4">
-                    <h4 class="font-weight-bolder">Total Price: #{{ product.totalPrice }}</h4>
+                    <h5 class="font-weight-bolder">Total Price: #{{ product.totalPrice }}</h5>
                 </div>
                 <div class="col-4">
                     <a :href="product.href.reviews" class="btn btn-secondary">View Reviews >></a>

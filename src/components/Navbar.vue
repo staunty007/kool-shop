@@ -17,6 +17,9 @@
           <li class="nav-item" v-if="!isAuth">
             <router-link class="nav-link" to="/login">Login</router-link>
           </li>
+          <li class="nav-item" v-if="isAuth">
+            <router-link class="nav-link" to="/admin/products/create">Create Product</router-link>
+          </li>
           <li class="nav-item dropdown" v-if="isAuth">
             <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Hey {{ isAuth }}

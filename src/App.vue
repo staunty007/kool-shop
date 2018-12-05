@@ -22,6 +22,6 @@ export default {
   font-family: 'Rubik', sans-serif;
 }
 body {
-  background: lavender;
+  background: white;
 }
 </style>

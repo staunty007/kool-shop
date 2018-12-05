@@ -5,6 +5,9 @@ import Register from '@/views/Register'
 import Home from '@/views/Home'
 import SingleProduct from '@/views/SingleProduct'
 
+//admins
+import CreateProduct from '@/views/admin/CreateProduct'
+
 Vue.use(Router)
 
 export default new Router({
@@ -29,6 +32,11 @@ export default new Router({
       path: '/product/:id',
       name: 'SingleProduct',
       component: SingleProduct
+    },
+    {
+      path: '/admin/products/create',
+      name: 'CreateProduct',
+      component: CreateProduct
     },
   ]
 })
